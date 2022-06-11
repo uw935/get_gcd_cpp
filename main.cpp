@@ -10,10 +10,23 @@ int main() {
 		
 	int firstnum, secondnum;
 
-	cout << "Hello! Type two nubmer: ";
-	cin >> firstnum  >>  secondnum ;
+	while (true) {
+		cout << "1 - exit" << endl;
+		cout << "Enter first nubmer: ";
+		cin >> firstnum;
 
-	cout << getGCD(firstnum, secondnum) << endl;
+		if (firstnum == 1) {
+			break;
+		}
+
+		cout << "Enter second nubmer: ";
+		cin >> secondnum;
+
+		cout << "\nGreatest common divisor of numbers: " << getGCD(firstnum, secondnum) << endl;
+		cout << "\n\n";
+	}
+	
+	return 0;
 
 } 
 
